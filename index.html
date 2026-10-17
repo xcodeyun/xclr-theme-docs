@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Overview — Xclr theme documentation</title>
+    <meta name="description" content="Setup guide and reference for the Xclr Shopify theme.">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-title" href="index.html">Xclr<span>theme documentation</span></a>
+        <nav class="site-nav" aria-label="Documentation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Overview</a></li>
+            <li><a href="settings.html">Theme settings</a></li>
+            <li><a href="sections.html">Sections</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <h1>Xclr theme documentation</h1>
+      <p class="lead">Xclr is an editorial apparel theme for Shopify Online Store 2.0. This guide covers installation, theme settings, sections, and support.</p>
+
+      <ul class="card-grid">
+        <li><a class="card" href="settings.html"><h3>Theme settings</h3><p>Logo, fonts, colors, layout, and menus.</p></a></li>
+        <li><a class="card" href="sections.html"><h3>Sections</h3><p>Hero, featured collection, image with text, and custom liquid.</p></a></li>
+        <li><a class="card" href="faq.html"><h3>FAQ</h3><p>Image sizes, fonts, updates, and common questions.</p></a></li>
+        <li><a class="card" href="support.html"><h3>Support</h3><p>How to reach us and what to include in a request.</p></a></li>
+      </ul>
+
+      <h2>Requirements</h2>
+      <ul>
+        <li>A Shopify store with the Online Store channel.</li>
+        <li>No apps are required. No build step is needed — the theme runs as uploaded.</li>
+        <li>A logo and a favicon are optional, but recommended before you publish.</li>
+      </ul>
+
+      <h2>Install the theme</h2>
+      <ol>
+        <li>Obtain the theme <code>.zip</code> file.</li>
+        <li>In the Shopify admin, go to <strong>Online Store → Themes</strong>.</li>
+        <li>Click <strong>Add theme → Upload zip file</strong> and select the file.</li>
+        <li>Preview the theme, then click <strong>Publish</strong> when you are ready to make it live.</li>
+      </ol>
+
+      <h2>Set up your store</h2>
+      <ol>
+        <li>Upload your <strong>logo</strong> and <strong>favicon</strong>, and set the logo width in Theme settings → Branding.</li>
+        <li>Choose a <strong>primary font</strong> in Theme settings → Typography.</li>
+        <li>Set your <strong>background</strong>, <strong>foreground</strong>, and <strong>accent</strong> colors in Theme settings → Colors.</li>
+        <li>Adjust <strong>page width</strong> and <strong>page margin</strong> in Theme settings → Layout.</li>
+        <li>Create a main menu and a footer menu under <strong>Online Store → Navigation</strong>. The theme uses the <code>main-menu</code> and <code>footer</code> menus by default.</li>
+        <li>Open the theme editor and build the home page from sections: <strong>Hero banner</strong>, <strong>Featured collection</strong>, and <strong>Image with text</strong>.</li>
+      </ol>
+
+      <h2>Updating the theme</h2>
+      <p>When a new version of Xclr is available, upload the new <code>.zip</code> file as a separate theme, preview it, and publish it when you are satisfied. Theme updates replace the theme code, so keep custom code changes in a separate copy or in the <strong>Custom liquid</strong> section so they are easy to re-apply.</p>
+
+      <div class="note">
+        <p><strong>Before you publish:</strong> check the home page, product pages, collection pages, search, and the cart at both mobile and desktop widths. If something looks wrong, <a href="support.html">contact support</a> with your store URL and a screenshot.</p>
+      </div>
+
+      <h2>What is included</h2>
+      <table>
+        <thead>
+          <tr><th>Area</th><th>Included in 0.1.0</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Templates</td><td>Home, product, collection, collection list, cart, search, blog, article, page, 404, password, gift card</td></tr>
+          <tr><td>Sections</td><td>Header, footer, hero banner, featured collection, image with text, custom liquid, custom section, and the default template sections</td></tr>
+          <tr><td>Settings</td><td>Branding, typography, layout, colors, header and footer options</td></tr>
+          <tr><td>Layout</td><td>Responsive from small phones to large desktops with breakpoints at 750 px, 990 px, and 1176 px</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Version</h2>
+      <p class="meta">Current documentation version: 0.1.0. See the <a href="changelog.html">changelog</a> for release notes.</p>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>Xclr theme documentation · Version 0.1.0 · <a href="support.html">Support</a> · © 2026 Xclr</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theme settings — Xclr theme documentation</title>
+    <meta name="description" content="Reference for Xclr theme settings: branding, typography, layout, and colors.">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-title" href="index.html">Xclr<span>theme documentation</span></a>
+        <nav class="site-nav" aria-label="Documentation">
+          <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="settings.html" aria-current="page">Theme settings</a></li>
+            <li><a href="sections.html">Sections</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <h1>Theme settings</h1>
+      <p class="lead">Global settings apply to every page. Open the theme editor, then click the settings icon next to the theme name to edit them.</p>
+
+      <h2 id="branding">Branding</h2>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Logo</td><td>Replaces the store name in the header. Use a horizontal image on a transparent background.</td></tr>
+          <tr><td>Logo width</td><td>Sets the logo width from 60 px to 240 px. The default is 120 px.</td></tr>
+          <tr><td>Favicon</td><td>The small icon shown in browser tabs and bookmarks. Use a square image; 48 px or larger is recommended.</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="typography">Typography</h2>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Primary</td><td>The font used for headings and body text. Pick any font from Shopify's font library. The theme loads regular, bold, italic, and bold italic variants automatically.</td></tr>
+        </tbody>
+      </table>
+      <p>The default font is Work Sans. Headings scale fluidly between screen sizes; no extra font settings are needed.</p>
+
+      <h2 id="layout">Layout</h2>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Page width</td><td><strong>Narrow</strong> (90rem) or <strong>Wide</strong> (110rem). This is the maximum width of page content on large screens.</td></tr>
+          <tr><td>Page margin</td><td>The minimum space between page content and the screen edge, from 10 px to 100 px. The default is 20 px.</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="colors">Colors</h2>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Background</td><td>The page background color.</td></tr>
+          <tr><td>Foreground</td><td>The default text and button color.</td></tr>
+          <tr><td>Accent colors: Background</td><td>Used by sections that offer an accent background, such as Image with text, and by image placeholders.</td></tr>
+          <tr><td>Accent colors: Foreground</td><td>The text color on accent backgrounds.</td></tr>
+          <tr><td>Input corner radius</td><td>Rounds the corners of form fields, from 0 px to 10 px.</td></tr>
+        </tbody>
+      </table>
+      <div class="note"><p>Keep the foreground color readable against the background color. Check both pairs — the main colors and the accent colors — before publishing.</p></div>
+
+      <h2 id="header-footer">Header and footer</h2>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Header: Menu</td><td>The menu shown in the header. Defaults to <code>main-menu</code>.</td></tr>
+          <tr><td>Footer: Menu</td><td>The menu shown in the footer. Defaults to <code>footer</code>.</td></tr>
+          <tr><td>Footer: Show payment icons</td><td>Shows the payment icons enabled in your store's payment settings.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Responsive behavior</h2>
+      <p>The theme adapts at three breakpoints:</p>
+      <ul>
+        <li><strong>Below 750 px</strong> — single column layouts, 2 product columns, taller hero.</li>
+        <li><strong>750 px to 989 px</strong> — 3 product columns, side-by-side content where space allows.</li>
+        <li><strong>990 px to 1175 px</strong> — 3 product columns, split layouts such as Image with text.</li>
+        <li><strong>1176 px and above</strong> — 4 product columns and the widest content area.</li>
+      </ul>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>Xclr theme documentation · Version 0.1.0 · <a href="support.html">Support</a> · © 2026 Xclr</p>
+      </div>
+    </footer>
+  </body>
+</html>

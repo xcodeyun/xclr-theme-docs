@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sections — Xclr theme documentation</title>
+    <meta name="description" content="Reference for Xclr sections: hero banner, featured collection, image with text, and custom liquid.">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-title" href="index.html">Xclr<span>theme documentation</span></a>
+        <nav class="site-nav" aria-label="Documentation">
+          <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="settings.html">Theme settings</a></li>
+            <li><a href="sections.html" aria-current="page">Sections</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <h1>Sections</h1>
+      <p class="lead">Add, remove, and reorder sections in the theme editor. Each section below can be added to any page that supports sections.</p>
+
+      <h2 id="hero-banner">Hero banner</h2>
+      <p>A full-width image banner with optional text and a button. The heading is rendered as the page's main heading.</p>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Image</td><td>Background image, cropped to fill the banner. Recommended 2400 × 1600 px or larger.</td></tr>
+          <tr><td>Eyebrow text</td><td>Small uppercase label above the heading.</td></tr>
+          <tr><td>Heading</td><td>Main banner headline.</td></tr>
+          <tr><td>Text</td><td>Short supporting paragraph.</td></tr>
+          <tr><td>Button label</td><td>Call-to-action text. The button is hidden when the label or link is empty.</td></tr>
+          <tr><td>Button link</td><td>Where the button goes.</td></tr>
+          <tr><td>Overlay opacity</td><td>Dark overlay behind the text, from 0% to 80%. The default is 30%.</td></tr>
+          <tr><td>Height</td><td><strong>Small</strong>, <strong>Medium</strong>, or <strong>Large</strong>. Height changes with the screen size.</td></tr>
+          <tr><td>Content position</td><td><strong>Left</strong>, <strong>Center</strong>, or <strong>Right</strong>.</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="featured-collection">Featured collection</h2>
+      <p>A grid of products from one collection. Product cards use a 3:4 image ratio and show the price, a compare-at price when present, and a sold-out label.</p>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Collection</td><td>The collection to show. The section is empty until a collection is selected.</td></tr>
+          <tr><td>Eyebrow text</td><td>Small uppercase label above the heading.</td></tr>
+          <tr><td>Heading</td><td>Section title.</td></tr>
+          <tr><td>Products to show</td><td>Between 2 and 12 products. The default is 8.</td></tr>
+          <tr><td>Show view all link</td><td>Adds a link to the full collection.</td></tr>
+        </tbody>
+      </table>
+      <p>The grid uses 2 columns on phones, 3 columns from 750 px, and 4 columns from 1176 px.</p>
+
+      <h2 id="image-with-text">Image with text</h2>
+      <p>An image beside a block of text. The two columns sit side by side from 990 px and stack below that.</p>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Image</td><td>Cropped to a 4:5 portrait ratio. Recommended 1600 px wide or larger.</td></tr>
+          <tr><td>Image position</td><td>Places the image on the <strong>Left</strong> or <strong>Right</strong> of the text.</td></tr>
+          <tr><td>Eyebrow text</td><td>Small uppercase label above the heading.</td></tr>
+          <tr><td>Heading</td><td>Section title.</td></tr>
+          <tr><td>Text</td><td>Supporting paragraph.</td></tr>
+          <tr><td>Button label</td><td>Call-to-action text.</td></tr>
+          <tr><td>Button link</td><td>Where the button goes.</td></tr>
+          <tr><td>Background</td><td><strong>Accent</strong> uses your accent colors; <strong>Plain</strong> uses the page background.</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="custom-liquid">Custom liquid</h2>
+      <p>Paste Liquid or HTML directly into the section. Use it for small snippets, embeds, or app snippets that output Liquid. The section is hidden when the field is empty.</p>
+
+      <h2>Custom section</h2>
+      <p>A full-width section with an optional background image and nestable blocks. Use it to compose layouts from text and group blocks without adding code.</p>
+
+      <h2>Header and footer</h2>
+      <p>The header and footer are section groups. Open them in the theme editor to add or remove sections and rearrange their content. Every page uses the same header and footer.</p>
+
+      <h2>Section availability</h2>
+      <table>
+        <thead><tr><th>Template</th><th>Default sections</th></tr></thead>
+        <tbody>
+          <tr><td>Home</td><td>Hero banner, Featured collection, Image with text</td></tr>
+          <tr><td>Product</td><td>Product</td></tr>
+          <tr><td>Collection</td><td>Collection</td></tr>
+          <tr><td>Collection list</td><td>Collections grid</td></tr>
+          <tr><td>Cart</td><td>Cart</td></tr>
+          <tr><td>Search</td><td>Search</td></tr>
+          <tr><td>Blog and article</td><td>Blog, Article</td></tr>
+          <tr><td>Page</td><td>Page</td></tr>
+          <tr><td>404</td><td>404</td></tr>
+          <tr><td>Password</td><td>Password</td></tr>
+        </tbody>
+      </table>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>Xclr theme documentation · Version 0.1.0 · <a href="support.html">Support</a> · © 2026 Xclr</p>
+      </div>
+    </footer>
+  </body>
+</html>

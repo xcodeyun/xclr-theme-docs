@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ — Xclr theme documentation</title>
+    <meta name="description" content="Common questions about installing, setting up, and using the Xclr theme.">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-title" href="index.html">Xclr<span>theme documentation</span></a>
+        <nav class="site-nav" aria-label="Documentation">
+          <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="settings.html">Theme settings</a></li>
+            <li><a href="sections.html">Sections</a></li>
+            <li><a href="faq.html" aria-current="page">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <h1>Frequently asked questions</h1>
+
+      <h2>How do I change my logo, fonts, or colors?</h2>
+      <p>Open the theme editor and click the settings icon. Logo and favicon are under <a href="settings.html#branding">Branding</a>, the font is under <a href="settings.html#typography">Typography</a>, and colors are under <a href="settings.html#colors">Colors</a>.</p>
+
+      <h2>What image sizes should I use?</h2>
+      <table>
+        <thead><tr><th>Image</th><th>Recommended size</th></tr></thead>
+        <tbody>
+          <tr><td>Hero banner</td><td>2400 × 1600 px or larger, landscape</td></tr>
+          <tr><td>Image with text</td><td>1600 × 2000 px or larger, portrait</td></tr>
+          <tr><td>Product images</td><td>1200 × 1600 px or larger, portrait 3:4</td></tr>
+          <tr><td>Collection images</td><td>1200 × 1200 px or larger, square</td></tr>
+          <tr><td>Logo</td><td>Horizontal, transparent PNG or SVG, at least 2× the displayed width</td></tr>
+          <tr><td>Favicon</td><td>48 × 48 px or larger, square</td></tr>
+        </tbody>
+      </table>
+      <p>The theme generates responsive image sizes automatically, so larger source images are safe to upload.</p>
+
+      <h2>Why is my featured collection empty?</h2>
+      <p>Check two things: a collection is selected in the section settings, and that collection contains products. The section stays empty when no collection is chosen.</p>
+
+      <h2>Why does my banner image look cropped?</h2>
+      <p>The hero image fills the banner and is cropped around the center. Use a wider image and keep the subject away from the edges, or raise the overlay opacity so text stays readable.</p>
+
+      <h2>Can I add apps?</h2>
+      <p>This version of the theme does not include app blocks. Apps that output Liquid can be inserted with the <a href="sections.html#custom-liquid">Custom liquid</a> section, following the app's own installation instructions.</p>
+
+      <h2>Does the theme support multiple languages?</h2>
+      <p>Storefront text from the theme is translatable through locale files. Version 0.1.0 includes English only; additional languages can be added by adding locale files in the theme code.</p>
+
+      <h2>How do I update the theme?</h2>
+      <p>Upload the new <code>.zip</code> file as a new theme, preview it, and publish it when you are ready. Keep a copy of any code customizations so you can re-apply them.</p>
+
+      <h2>Can I use the theme on more than one store?</h2>
+      <p>Each theme license covers one store. Contact <a href="support.html">support</a> if you need to use Xclr on additional stores.</p>
+
+      <h2>How do I report a bug?</h2>
+      <p>Email <a href="mailto:xcodeyun@gmail.com">xcodeyun@gmail.com</a> with your store URL, a description of the problem, and a screenshot. See <a href="support.html">Support</a> for what to include.</p>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>Xclr theme documentation · Version 0.1.0 · <a href="support.html">Support</a> · © 2026 Xclr</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sections — Xclr theme documentation</title>
-    <meta name="description" content="Reference for Xclr sections: hero banner, featured collection, image with text, and custom liquid.">
+    <meta name="description" content="Reference for Xclr sections: hero banner, featured collection, image with text, product, featured product, and custom liquid.">
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
@@ -75,8 +75,33 @@
         </tbody>
       </table>
 
+      <h2 id="product">Product</h2>
+      <p>The main product section. Every part of the product page is a block, so blocks can be reordered, removed, or added — including app blocks and custom liquid blocks.</p>
+      <table>
+        <thead><tr><th>Block</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Title</td><td>The product title, rendered as the page heading.</td></tr>
+          <tr><td>Vendor</td><td>Links to all products from the same vendor.</td></tr>
+          <tr><td>Price</td><td>The price, a compare-at price when present, and a sold-out label.</td></tr>
+          <tr><td>Description</td><td>The product description as rich text.</td></tr>
+          <tr><td>Buy buttons</td><td>Variant picker, quantity, add to cart, and an optional payment button.</td></tr>
+          <tr><td>Custom liquid</td><td>Free-form Liquid or HTML, for app snippets and small customizations.</td></tr>
+          <tr><td>App block</td><td>Blocks added by installed apps, placed anywhere among the other blocks.</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="featured-product">Featured product</h2>
+      <p>Highlights a single product with its image and content. It is built from blocks the same way as the Product section, and supports app blocks and custom liquid blocks.</p>
+      <table>
+        <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>Product</td><td>The product to highlight. The section stays empty until a product is selected.</td></tr>
+        </tbody>
+      </table>
+      <p>Blocks: title, price, description, button, custom liquid, and app blocks.</p>
+
       <h2 id="custom-liquid">Custom liquid</h2>
-      <p>Paste Liquid or HTML directly into the section. Use it for small snippets, embeds, or app snippets that output Liquid. The section is hidden when the field is empty.</p>
+      <p>Paste Liquid or HTML directly into the section. Use it for small snippets, embeds, or app snippets that output Liquid. The section is hidden when the field is empty. A <strong>Custom liquid block</strong> with the same <code>liquid</code> setting is also available inside the Product, Featured product, and Custom section blocks.</p>
 
       <h2>Custom section</h2>
       <p>A full-width section with an optional background image and nestable blocks. Use it to compose layouts from text and group blocks without adding code.</p>
@@ -89,7 +114,8 @@
         <thead><tr><th>Template</th><th>Default sections</th></tr></thead>
         <tbody>
           <tr><td>Home</td><td>Hero banner, Featured collection, Image with text</td></tr>
-          <tr><td>Product</td><td>Product</td></tr>
+          <tr><td>Product</td><td>Product (built from blocks)</td></tr>
+          <tr><td>Featured product</td><td>Can be added to any page that supports sections</td></tr>
           <tr><td>Collection</td><td>Collection</td></tr>
           <tr><td>Collection list</td><td>Collections grid</td></tr>
           <tr><td>Cart</td><td>Cart</td></tr>
@@ -103,7 +129,7 @@
     </main>
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <p>Xclr theme documentation · Version 0.1.0 · <a href="support.html">Support</a> · © 2026 Xclr</p>
+        <p>Xclr theme documentation · Version 0.1.1 · <a href="support.html">Support</a> · © 2026 Xclr</p>
       </div>
     </footer>
   </body>
